@@ -1,4 +1,16 @@
-import { User, ToDo, ID } from "./interfaces";
+type ID = number | string
+
+interface User {
+    id: ID,
+    name: string,
+}
+
+interface ToDo {
+    userId: ID,
+    id: ID,
+    title: string,
+    completed: boolean,
+}
 
 (function() {
 	// Globals
